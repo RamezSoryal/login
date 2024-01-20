@@ -1,0 +1,20 @@
+body{
+    background-color: #24353F;
+    
+}
+.card{
+    background-color: #24353F;  
+}
+h1{
+    color: #17A2B8;
+}
+.btn{
+    color: #17A2B8;
+    border:1px solid #17A2B8;
+    
+}
+
+.btn:hover{
+    background-color: #17A2B8; 
+    color:white;
+}

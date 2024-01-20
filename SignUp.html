@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>signup</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+
+<body>
+  <div class="card w-50 mx-auto mt-5 shadow-lg p-3 mb-5">
+    <h1 class="tex-center mx-auto mt-3 mb-3">Smart Login System</h1>
+
+    <input type="text" name="username" placeholder="Enter your name" required
+      class="form-control mt-3 w-75 mx-auto bg-transparent text-white" id="username" />
+    <input type="email" name="email" placeholder="Enter your email" required
+      class="form-control mt-3 w-75 mx-auto bg-transparent text-white" id="email" />
+    <p id="invalid-email" class="text-center text-capitalize text-danger d-none">
+      invalid email
+    </p>
+    <p id="emptyinput" class="text-center text-capitalize text-danger d-none">
+      email is requerd
+    </p>
+    <input type="password" name="password" placeholder="password"
+      class="form-control mt-3 w-75 mx-auto bg-transparent text-white" id="password" />
+    <p id="invalid-password" class="text-center text-capitalize text-danger d-none ">
+      invalid password <br>
+      -- at least 8 character--should conait at least one capital letter ,one small letter,one
+      none alphapitical character and number--
+    </p>
+    <p id="empty-password" class="text-center text-capitalize text-danger d-none">
+      password is requerd
+    </p>
+
+    <p class="tex-center text-success d-none mx-auto valid-signup">success</p>
+    <a class="btn form-control mt-3 w-75 mx-auto" id="SignUp" onclick="SignUp()">
+      SignUp
+    </a>
+
+    <p class="mx-auto mt-2 text-white">
+      You Have an account?
+      <a href="index.html" class="text-decoration-none text-white">Signin</a>
+    </p>
+
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/login.js"></script>
+</body>
+
+</html>
